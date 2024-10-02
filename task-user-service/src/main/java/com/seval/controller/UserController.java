@@ -19,15 +19,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/profile")
+    public ResponseEntity<User> getUserProfile(@RequestHeader("Authorization") String jwt) {
+        User user = userService.getUserProfile(jwt);
+        return ResponseEntity.ok(user);
+    }
+
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
     }
 
-    @GetMapping("/profile")
-    public ResponseEntity<User> getUserProfile(@RequestHeader("Authorization") String jwt) {
-        User user = userService.getUserProfile(jwt);
-        return ResponseEntity.ok(user);
-    }
+
 }
