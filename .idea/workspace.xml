@@ -5,21 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65cf669-59b7-43b3-a289-973bcad9b1f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/modal/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/seval/TaskServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/TaskServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-user-service/src/main/java/com/seval/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-user-service/src/main/java/com/seval/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/seval/modal/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/modal/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/seval/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/seval/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/controller/Submissioncontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/controller/Submissioncontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/Submission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/TaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/TaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/modal/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-submission-service/src/main/java/com/seval/task_submission_service/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +42,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2msNZZD8C4j35JWOIvtrPhagJM7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
@@ -46,12 +56,54 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/seval/IdeaProjects/Task Management/task-submission-service",
+    "last_opened_file_path": "C:/Users/seval/IdeaProjects/Task Management",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\seval\IdeaProjects\Task Management\task-submission-service\src\main\java\com\seval\task_submission_service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.seval.task_submission_service.modal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TaskSubmissionServiceApplication">
+    <configuration name="TaskServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seval.TaskServiceApplication" />
+      <module name="task-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seval.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskSubmissionServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seval.task_submission_service.TaskSubmissionServiceApplication" />
+      <module name="task-submission-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seval.task_submission_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TaskSubmissionServiceApplication" />
+        <item itemvalue="Application.TaskServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
