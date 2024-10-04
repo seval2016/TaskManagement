@@ -3,6 +3,7 @@ package com.seval.config;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -22,14 +23,21 @@ public class ApplicationConfigration {
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Stateless için ayar
-                .authorizeHttpRequests(authorize -> authorize
+                .sessionManagement(
+                        management -> management
+                        .sessionCreationPolicy(
+                                SessionCreationPolicy.STATELESS
+                        )
+                ) // Stateless için ayar
+                .authorizeHttpRequests(
+                        Authorize -> Authorize
                         .requestMatchers("/api/**").authenticated() // API yolları doğrulama gerektiriyor
-                        .anyRequest().permitAll()) // Diğer tüm istekler izinli
-                .addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class) // JWT doğrulayıcı
+                        .anyRequest().permitAll() // Diğer tüm istekler izinli
+                ).addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class) // JWT doğrulayıcı
                 .csrf(csrf -> csrf.disable()) // CSRF koruması kapalı
-                .cors(Customizer.withDefaults()); // Varsayılan CORS ayarları
+                .cors(cors->cors.configurationSource(corsConfigurationSource()))
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(Customizer.withDefaults());
 
         return http.build();
     }
@@ -37,7 +45,6 @@ public class ApplicationConfigration {
 
     private CorsConfigurationSource corsConfigurationSource() {
         return new CorsConfigurationSource() {
-
             @Override
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration cfg = new CorsConfiguration();

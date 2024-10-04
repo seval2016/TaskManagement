@@ -2,6 +2,7 @@ package com.seval.controller;
 
 import com.seval.modal.User;
 import com.seval.service.UserService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,10 +15,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/users")
+@AllArgsConstructor
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
     @GetMapping("/profile")
     public ResponseEntity<User> getUserProfile(@RequestHeader("Authorization") String jwt) {
@@ -25,10 +26,10 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
-    @GetMapping
-    public ResponseEntity<List<User>> getAllUsers() {
+    @GetMapping()
+    public ResponseEntity<List<User>> getUsers(@RequestHeader("Authorization") String jwt) {
         List<User> users = userService.getAllUsers();
-        return ResponseEntity.ok(users);
+        return new ResponseEntity<>(users,HttpStatus.OK);
     }
 
 
