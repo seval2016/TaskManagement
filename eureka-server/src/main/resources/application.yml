@@ -1,0 +1,11 @@
+server:
+  port: 8070  # Eureka Server'?n çal??aca?? port
+
+eureka:
+  instance:
+    hostname: localhost  # Eureka Server'?n hostname bilgisi
+  client:
+    register-with-eureka: false  # Bu uygulaman?n kendisini ba?ka bir Eureka sunucusuna kaydetmeyece?ini belirtir
+    fetch-registry: false        # Di?er hizmetlerin kay?t defterini almayaca??n? belirtir
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/  # Eureka Server'?n URL'si
