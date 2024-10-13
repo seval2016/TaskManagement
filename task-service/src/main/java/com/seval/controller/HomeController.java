@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-
     @GetMapping("/tasks")
-    public ResponseEntity<String> getAssignedUsersTask(){
+    public ResponseEntity<String> getAssignedUsersTask() {
         return new ResponseEntity<>("welcome to task service", HttpStatus.OK);
     }
 }

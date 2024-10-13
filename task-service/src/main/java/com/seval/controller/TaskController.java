@@ -1,8 +1,6 @@
 package com.seval.controller;
 
-import com.seval.modal.Task;
-import com.seval.modal.TaskStatus;
-import com.seval.modal.UserDto;
+import com.seval.modal.*;
 import com.seval.service.TaskService;
 import com.seval.service.UserService;
 import lombok.RequiredArgsConstructor;
